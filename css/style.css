@@ -1,0 +1,584 @@
+/*--------------------------------------------------------------
+Base styles
+--------------------------------------------------------------*/
+body,
+button,
+input,
+textarea {
+    color: black;
+    font-family: 'Asap', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #EDEDED;
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+header,
+footer {
+    background-color: black;
+    height: 100px;
+}
+
+.sidebar-right {
+    background-color: #EDEDED;
+    color: white;
+}
+
+h1 {
+    color: red;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+@media screen and (min-width: 1120px) {
+
+    .content-area {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .sidebar-right {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 320px;
+        flex: 0 0 320px;
+    }
+}
+
+/*--------------------------------------------------------------
+Start Header styles
+--------------------------------------------------------------*/
+
+.site-header {
+    height: 400px;
+    /* R */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+
+.site-info {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.site-description {
+    text-align: center;
+    color: #F6D200;
+    font-size: 1.2em;
+    margin-top: -.8em;
+    font-style: italic;
+}
+
+.main-menu {
+    padding: 1em 1em;
+    color: black;
+    background: #F6D200;
+}
+
+@media screen and (min-width: 1120px) {
+
+    .site-title {
+        font-size: 4em;
+    }
+
+}
+
+/*--------------------------------------------------------------
+End Header styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	START THE POSTS STYLES
+--------------------------------------------------------------*/
+
+.main-content-area {
+    padding: 2em;
+}
+
+.post {
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.post a {
+    color: black;
+    text-decoration: none;
+}
+
+.post-content {
+    padding: 0 40px 20px;
+}
+
+.post-content h2 {
+    background-color: #F6D200;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin: 0 -40px 30px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 810px) {
+
+    .posts {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .post {
+        -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    }
+    
+}
+
+
+@media only  screen and (min-width: 1120px) {
+    
+    .post-one-third{
+       -ms-flex-preferred-size: 32%;
+       flex-basis: 32%;
+    }
+    
+    .post-full{
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    
+    .post-half{
+        -ms-flex-preferred-size: 49%;
+        flex-basis: 49%%
+    }
+    
+    
+}
+
+
+
+
+.section-header {
+	color: black;
+	font-size: 3em;
+	text-align: center;
+}
+
+.watch-card {
+	margin-bottom: 1em;
+}
+
+.watch-content {
+	background-color: black;
+	color: white;
+	padding: 3em;
+}
+
+.watch-content h2 {
+	font-size: 2em;
+	font-weight: 300;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+.movie-info {
+	font-weight: bold;
+}
+
+.movie-info span {
+	padding-right: 1.5em;
+}
+
+.movie-story {
+	margin: 1em 0;
+}
+
+.watch-content a {
+	color: white;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 810px) {
+
+	.watch-card {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.watch-content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: column;
+		flex-flow: column;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.img-right {
+		-webkit-box-ordinal-group: 3;
+		-ms-flex-order: 2;
+		order: 2;
+	}
+
+}
+
+
+
+
+/*--------------------------------------------------------------
+start Section download styles
+--------------------------------------------------------------*/
+
+.download-card {
+	margin-bottom: 1em;
+}
+
+.download-content {
+	background-color: white;
+}
+
+.download-content a {
+	background-color: black;
+	color: white;
+	padding: 1em 2em;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.download-content a i {
+	font-size: 2.5em;
+}
+
+.download-info {
+	padding: 1em 2em;
+}
+
+.download-info h4 {
+	margin: 0;
+}
+
+.download-info p {
+	margin: 0;
+	font-size: .9em;
+}
+
+.download-cast img {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+}
+
+.download-rating {
+	background-color: #F6D200;
+	padding: 1em 2em;
+	color: black;
+	font-size: .9em;
+}
+
+.download-rating .rate {
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-bottom: -.25em;
+}
+
+.download-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+
+}
+
+.download-content a, .download-rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.download-genre, .download-cast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.download-info h4 {
+	-ms-flex-preferred-size: 20%;
+	flex-basis: 20%;
+}
+
+.download-genre {
+	margin-bottom: 10px;
+}
+
+.gallery-img img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 820px) {
+ 
+    .download-content{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+    }
+    
+    .download-content a, .download-rating{
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+    .download-info {
+        -webkit-box-flex:2;
+        -ms-flex-positive:2;
+        flex-grow:2;
+    }
+}
+
+
+/*--------------------------------------------------------------
+start Section download styles
+--------------------------------------------------------------*/
+
+
+.gallery-imgs{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+    
+}
+
+.gallery-img{
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin: 0 0 8px 8px;
+}
+.gallery-img img{
+    height: 100%
+}
+.gallery-img:nth-child(4n+1) {
+     -ms-flex-preferred-size: 250px;
+     flex-basis: 250px;
+}
+
+.gallery-img:nth-child(4n+2) {
+     -ms-flex-preferred-size: 325px;
+     flex-basis: 325px;
+}
+
+.gallery-img:nth-child(4n+3) {
+     -ms-flex-preferred-size: 180px;
+     flex-basis: 180px;
+}
+.gallery-img:nth-child(4n+4) {
+     -ms-flex-preferred-size: 380px;
+     flex-basis: 380px;
+}
+
+/*sidebar*/
+
+.sidebar-right {
+	padding: 2em;
+	color: black;
+}
+
+.widget {
+	background-color: white;
+	margin-bottom: 2em; 
+}
+
+.widget-content {
+	padding: .5em 2em;
+}
+
+.sidebar-menu ul {
+	list-style-type: none;
+	padding-left: 1em;
+}
+
+.sidebar-menu a {
+	display: block;
+	padding-bottom: .4em;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+@media screen and (min-width: 810px) and (max-width: 1120px) {
+	.sidebar-right {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.widget {
+		-ms-flex-preferred-size: 48.8%;
+		flex-basis: 48.8%;
+	}
+}
+
+
+
+.main-menu {
+	color: black;
+	background: #F6D200;
+}
+
+.main-menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.main-menu li a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: .6em 1em;
+	display: block;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.main-menu li a:hover {
+	background-color: black;
+	color: #F6D200;
+}
+
+
+@media screen and (min-width: 810px) {
+    .main-menu ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .main-menu ul li{
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-negative:;
+        flex-shrink: 0;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        
+    }    
+}
+
+footer.site-footer {
+    text-align: center;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
